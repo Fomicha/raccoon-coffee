@@ -1,0 +1,23 @@
+// Variables
+text-color = #e6e6e6
+orange = #ff9955
+
+tb = 1023
+mb = 767
+hd = 1670
+mbb = 357
+de = 1280
+
+// Mixins
+flex-center()
+  display flex
+  justify-content center
+  align-items center
+
+below(value)
+  @media screen and (max-width: unit(value, px))
+    {block}
+
+above(value)
+  @media screen and (min-width: unit(value, px))
+    {block}

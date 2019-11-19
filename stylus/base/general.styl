@@ -1,0 +1,131 @@
+@import "variables.styl"
+
+// wrapper
+.wrapper
+  display block
+  margin 0 auto
+  max-width 964px
+  width 100%
+  min-height 100%
+  position relative
+
+  +above(hd)
+    max-width 1200px
+
+  +below(tb)
+    max-width 90%
+
+  +below(mb)
+    max-width 98%
+
+ // slider
+.slick-active
+.slick-initialized
+.slick-slide
+.slick-current
+  outline 0 !important
+
+// loader
+.preloader {
+  flex-center()
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  pointer-events: none;
+  z-index: 9999;
+
+  &:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: orange;
+    transform: translateX(-100%);
+    transition: transform .3s ease;
+  }
+
+  &.loaded {
+    &:after {
+      transform: translateX(0);
+    }
+  }
+}
+
+main {
+  transition: opacity .5s linear;
+  position: relative;
+}
+
+main.loading {
+  opacity: 0;
+}
+
+.loading-indicator {
+  display: block;
+  width: 54px;
+  height: 54px;
+  border-radius: 100px;
+  border: 3px solid gray;
+  border-right: 3px solid orange;
+  margin: 0 auto;
+  animation: loading 1s linear infinite;
+}
+
+@keyframes loading {
+
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+// title
+.title
+  display block
+  color #000000
+  font-size 28px
+  text-transform uppercase
+  font-family Roboto, sans-serif
+  margin 0 auto 40px auto
+  position relative
+  width 200px
+  text-align center
+
+  +below(mb)
+    width 132px
+    font-size 24px
+
+  &:before
+  &:after
+    position absolute
+    display block
+    content ""
+    width 130px
+    height 2px
+    bottom 0
+    top 0
+    margin auto
+    background #e6e6e6
+    right 200px
+
+    +below(mb)
+      right 140px
+      width 70px
+
+  &:after
+    right unset
+    left 200px
+
+    +below(mb)
+      left 140px
+
+

@@ -1,0 +1,149 @@
+extends ../components/layout.pug
+
+block variables
+
+    - var pageName = 'index'
+    - var slider = ['url(img/1.jpg)', 'url(img/2.jpg)', 'url(img/3.jpg)', 'url(img/4.jpg)', 'url(img/5.jpg)']
+    -
+        var menu = [
+         {
+         icon: 'img/kofejnik.svg',
+         divider: 'img/zvezda.svg',
+         text: 'Мы варим кофе. Продаем на развес, молотый и в зернах',
+         link: 'https://www.dropbox.com/s/364y9bvut6beppk/menu.pdf?dl=0'
+         },
+         {
+         icon: 'img/list2.svg',
+         divider: 'img/zvezda.svg',
+         text: 'Еще чай. Тоже на развес. Тоже продаем. Хороший',
+         link: 'https://www.dropbox.com/s/5x9ch9hzdzfy1to/menu-hot.pdf?dl=0'
+         },
+         {
+         icon: 'img/sok.svg',
+         divider: 'img/zvezda.svg',
+         text: 'Напитки фирменные тоже есть. Ну они вообще пушка',
+         link: 'https://www.dropbox.com/s/hod3xc5i36bo4xn/menu-cold.pdf?dl=0'
+         }
+         ];
+
+
+block content
+
+    section.main#start
+        .main-slider
+            each img in slider
+                .main-slider__item(style={background: img})
+        .wrapper
+            .main__inner
+                .main__content
+                    img.main-page__logo(src='img/rysunek-3.svg')
+            .main__scroll-down
+                span.scroll-btn
+                    a(href="#")
+                        span.mouse
+                            span
+
+    section.about#about
+        .wrapper
+            .title О нас
+            .about__container
+                .about__discription
+                    .about__name-img
+                        img.about__name-img_img(src='img/text.svg')
+                    .about__logo-img
+                        img.about__logo-img_img(src='img/enot.svg')
+                    .about__text
+                        p
+                            | Типо мы варим кофе (самый вкусный).
+                            br
+                            | Продаем на развес, молотый и в зернах.
+                            br
+                            | Еще чай. Много чая. Есть тоже на и развес. Еще фирменные напитки готовим.
+                            br
+                            | В общем у нас много всего интересного и вкусного, так что ждём!
+                        p
+                            | К тому же, мы сотрудничаем с крутыми чуваками, которые разработали мобильное приложение
+                            | и с его помощью вы сможете накапливать бонусы и получать плюшки-прянички
+                    .about__partners
+                        a(href='https://143up.com/' target="_blank")
+                            img.about__partners-img(src='img/143.png')
+                    .about__partners-apps
+                        | Качай приложения:
+                        .about__partners_stores
+                            a(href='https://play.google.com/store/apps/details?id=com.oneforfree.oneforfree' target="_blank")
+                                img.about__partners-img(src='img/google-play.png')
+                            a(href='https://apps.apple.com/us/app/one-for-free/id1361558770' target="_blank")
+                                img.about__partners-img(src='img/download.png')
+                .about__turk
+                    img.about__turk-img(src='img/6.png')
+
+    section.menu#menu-menu
+        .wrapper
+            .title Меню
+            .menu__container
+                each item in menu
+                    .menu__items
+                        .menu__img
+                            img.menu__icon(src=item.icon)
+                        .menu__devider
+                            img.menu__devider-icon(src=item.divider)
+                        .menu__text
+                            p=item.text
+                        .menu__pdf
+                            a.menu__pdf-link(href=item.link target="_blank") Смотреть меню
+
+    // section.delivery
+        .title Доставка
+        .delivery__container
+            .delivery__info
+                .delivery__logo
+                    img.delivery__img(src='img/enot.svg')
+                .delivery__info-details
+                    .delivery__title
+                        img.delivery__title-img(src='img/racoon.svg')
+                    .delivery__subtitle
+                        p Доставляет
+                    .delivery__devider
+                        img.delivery__devider-icon(src='img/zvezda.svg')
+                    .delivery__text
+                        p
+                            | Сидишь такой в офисе, уставший, злой как падлюка,
+                            | спать хочетсяничего тебя не радует, сил нет. И тут
+                            | чиииик, Ракун кофе принес. Годно ж, правда?
+                            | Так вот, отныне твои влажные мечты могут
+                            | воплотиться в реальность!
+                            | Псообразный доставит
+            .delivery__map#mapid
+                iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1475.742904639671!2d30.510745639629587!3d50.45158736814025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce5be341b15b%3A0xf1bbb4426e66221e!2sReitarska+St%2C+17%2C+Kyiv%2C+02000!5e0!3m2!1sen!2sua!4v1553636114314" width="600" height="450" frameborder="0" style="border:0" allowfullscreen)
+
+    section.contacts#contacts
+        .title Контакты
+        .contacts__container
+            .contacts__logo
+                img.contacts__logo-img(src="./img/logo.svg")
+            .contacts__location-wrapper
+                .contacts__map#mapid
+                .contacts__info
+                    .contacts__location
+                        h3 Наши адреса:
+                        span.contacts__location-adress
+                            a(href="https://g.page/raccoon-coffee?share" target="_blank") &#x2022; ПР. ПОБЕДЫ, 22 (Паркетный зал "Вудхард")
+                        span.contacts__location-adress.contacts__location-adress_middle
+                            a(href="https://goo.gl/maps/ZWoQQWNYTBzmAbdg9" target="_blank") &#x2022; УЛ. КОНСТАНТИНОВСКАЯ, 21 (бар "Zbirka")
+                        span.contacts__location-adress
+                            a(href="https://goo.gl/maps/uttYQpeoA4ygs1pM6" target="_blank") &#x2022; ПР. АКАДЕМИКА ПАЛАДИНА, 7 (Кав'ярня Єнотік)
+                    .contacts__location
+                        h3 Наш телефон
+                        span
+                            a(href="tel:+380688158043" target="_blank") +38 068 815 80 43
+                    //.contacts__location
+                    //    h3 Email
+                    //    span
+                    //        a(href="mailto:info@raccoon-coffee.com") info@raccoon-coffee.com
+                    .contacts__location
+                        h3 Наш график работы
+                        span ПН-ВС: 8:00 - 20:00
+                    .contacts__location
+                        h3 Наш Instagram
+                        span
+                            a(href="https://www.instagram.com/raccoon.coffee/" target="_blank") @raccoon.coffee

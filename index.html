@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics-->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-142875529-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-142875529-1');
+    </script>
+    <!-- Google Tag Manager-->
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-N7XGVHM');
+    </script>
+    <!-- End Google Tag Manager-->
+    <title>Raccoon Coffee</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#333333ff">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+    <link href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/scroll-down.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin="">
+    <link rel="icon" href="img/fav.png" type="image/x-icon">
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript)-->
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N7XGVHM" height="0" width="0" style="display:none;visibility:hidden;"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript)-->
+    <div class="preloader">
+      <div class="loading-indicator"></div>
+    </div>
+    <header class="header">
+      <div class="header__wrapper">
+        <div class="header__inner">
+          <div class="header__nav" id="menu">
+            <ul class="header__list">
+              <li class="header__item"><a class="header__link" href="#start"><span>Старт</span></a></li>
+              <li class="header__item"><a class="header__link" href="#about"><span>О нас</span></a></li>
+              <li class="header__item"><a class="header__link" href="#menu-menu"><span>Меню</span></a></li>
+              <!--li.header__item
+              a.header__link(href="#")
+                  span Доставка
+              -->
+              <li class="header__item"><a class="header__link" href="#contacts"><span>Контакты</span></a></li>
+            </ul>
+            <div class="header__menu-icon"><span></span></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="index-page">
+      <section class="main" id="start">
+        <div class="main-slider">
+          <div class="main-slider__item" style="background:url(img/1.jpg);"></div>
+          <div class="main-slider__item" style="background:url(img/2.jpg);"></div>
+          <div class="main-slider__item" style="background:url(img/3.jpg);"></div>
+          <div class="main-slider__item" style="background:url(img/4.jpg);"></div>
+          <div class="main-slider__item" style="background:url(img/5.jpg);"></div>
+        </div>
+        <div class="wrapper">
+          <div class="main__inner">
+            <div class="main__content"><img class="main-page__logo" src="img/rysunek-3.svg"></div>
+          </div>
+          <div class="main__scroll-down"><span class="scroll-btn"><a href="#"><span class="mouse"><span></span></span></a></span></div>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="wrapper">
+          <div class="title">О нас</div>
+          <div class="about__container">
+            <div class="about__discription">
+              <div class="about__name-img"><img class="about__name-img_img" src="img/text.svg"></div>
+              <div class="about__logo-img"><img class="about__logo-img_img" src="img/enot.svg"></div>
+              <div class="about__text">
+                <p>Типо мы варим кофе (самый вкусный).<br>Продаем на развес, молотый и в зернах.<br>Еще чай. Много чая. Есть тоже на и развес. Еще фирменные напитки готовим.<br>В общем у нас много всего интересного и вкусного, так что ждём!</p>
+                <p>
+                  К тому же, мы сотрудничаем с крутыми чуваками, которые разработали мобильное приложение
+                  и с его помощью вы сможете накапливать бонусы и получать плюшки-прянички
+                </p>
+              </div>
+              <div class="about__partners"><a href="https://143up.com/" target="_blank"><img class="about__partners-img" src="img/143.png"></a></div>
+              <div class="about__partners-apps">Качай приложения:
+                <div class="about__partners_stores"><a href="https://play.google.com/store/apps/details?id=com.oneforfree.oneforfree" target="_blank"><img class="about__partners-img" src="img/google-play.png"></a><a href="https://apps.apple.com/us/app/one-for-free/id1361558770" target="_blank"><img class="about__partners-img" src="img/download.png"></a></div>
+              </div>
+            </div>
+            <div class="about__turk"><img class="about__turk-img" src="img/6.png"></div>
+          </div>
+        </div>
+      </section>
+      <section class="menu" id="menu-menu">
+        <div class="wrapper">
+          <div class="title">Меню</div>
+          <div class="menu__container">
+            <div class="menu__items">
+              <div class="menu__img"><img class="menu__icon" src="img/kofejnik.svg"></div>
+              <div class="menu__devider"><img class="menu__devider-icon" src="img/zvezda.svg"></div>
+              <div class="menu__text">
+                <p>Мы варим кофе. Продаем на развес, молотый и в зернах</p>
+              </div>
+              <div class="menu__pdf"><a class="menu__pdf-link" href="https://www.dropbox.com/s/364y9bvut6beppk/menu.pdf?dl=0" target="_blank">Смотреть меню</a></div>
+            </div>
+            <div class="menu__items">
+              <div class="menu__img"><img class="menu__icon" src="img/list2.svg"></div>
+              <div class="menu__devider"><img class="menu__devider-icon" src="img/zvezda.svg"></div>
+              <div class="menu__text">
+                <p>Еще чай. Тоже на развес. Тоже продаем. Хороший</p>
+              </div>
+              <div class="menu__pdf"><a class="menu__pdf-link" href="https://www.dropbox.com/s/5x9ch9hzdzfy1to/menu-hot.pdf?dl=0" target="_blank">Смотреть меню</a></div>
+            </div>
+            <div class="menu__items">
+              <div class="menu__img"><img class="menu__icon" src="img/sok.svg"></div>
+              <div class="menu__devider"><img class="menu__devider-icon" src="img/zvezda.svg"></div>
+              <div class="menu__text">
+                <p>Напитки фирменные тоже есть. Ну они вообще пушка</p>
+              </div>
+              <div class="menu__pdf"><a class="menu__pdf-link" href="https://www.dropbox.com/s/hod3xc5i36bo4xn/menu-cold.pdf?dl=0" target="_blank">Смотреть меню</a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section.delivery
+      .title Доставка
+      .delivery__container
+          .delivery__info
+              .delivery__logo
+                  img.delivery__img(src='img/enot.svg')
+              .delivery__info-details
+                  .delivery__title
+                      img.delivery__title-img(src='img/racoon.svg')
+                  .delivery__subtitle
+                      p Доставляет
+                  .delivery__devider
+                      img.delivery__devider-icon(src='img/zvezda.svg')
+                  .delivery__text
+                      p
+                          | Сидишь такой в офисе, уставший, злой как падлюка,
+                          | спать хочетсяничего тебя не радует, сил нет. И тут
+                          | чиииик, Ракун кофе принес. Годно ж, правда?
+                          | Так вот, отныне твои влажные мечты могут
+                          | воплотиться в реальность!
+                          | Псообразный доставит
+          .delivery__map#mapid
+              iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1475.742904639671!2d30.510745639629587!3d50.45158736814025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce5be341b15b%3A0xf1bbb4426e66221e!2sReitarska+St%2C+17%2C+Kyiv%2C+02000!5e0!3m2!1sen!2sua!4v1553636114314" width="600" height="450" frameborder="0" style="border:0" allowfullscreen)
+      
+      -->
+      <section class="contacts" id="contacts">
+        <div class="title">Контакты</div>
+        <div class="contacts__container">
+          <div class="contacts__logo"><img class="contacts__logo-img" src="./img/logo.svg"></div>
+          <div class="contacts__location-wrapper">
+            <div class="contacts__map" id="mapid"></div>
+            <div class="contacts__info">
+              <div class="contacts__location">
+                <h3>Наши адреса:</h3><span class="contacts__location-adress"><a href="https://g.page/raccoon-coffee?share" target="_blank">&#x2022; ПР. ПОБЕДЫ, 22 (Паркетный зал "Вудхард")</a></span><span class="contacts__location-adress contacts__location-adress_middle"><a href="https://goo.gl/maps/ZWoQQWNYTBzmAbdg9" target="_blank">&#x2022; УЛ. КОНСТАНТИНОВСКАЯ, 21 (бар "Zbirka")</a></span><span class="contacts__location-adress"><a href="https://goo.gl/maps/uttYQpeoA4ygs1pM6" target="_blank">&#x2022; ПР. АКАДЕМИКА ПАЛАДИНА, 7 (Кав'ярня Єнотік)</a></span>
+              </div>
+              <div class="contacts__location">
+                <h3>Наш телефон</h3><span><a href="tel:+380688158043" target="_blank">+38 068 815 80 43</a></span>
+              </div>
+              <!--.contacts__location-->
+              <!--    h3 Email-->
+              <!--    span-->
+              <!--        a(href="mailto:info@raccoon-coffee.com") info@raccoon-coffee.com-->
+              <div class="contacts__location">
+                <h3>Наш график работы</h3><span>ПН-ВС: 8:00 - 20:00</span>
+              </div>
+              <div class="contacts__location">
+                <h3>Наш Instagram</h3><span><a href="https://www.instagram.com/raccoon.coffee/" target="_blank">@raccoon.coffee</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+  <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin=""></script>
+  <script src="js/main.js"></script>
+</html>

@@ -1,0 +1,68 @@
+.menu
+  display block
+  width 100%
+  height auto
+  background-image  url("../img/4.jpg")
+  background-repeat no-repeat
+  background-size cover
+  background-position center
+  overflow hidden
+  padding: 60px 0
+
+  .title
+    color text-color
+
+  &__container
+    display flex
+    align-items: baseline;
+    width 100%
+    height auto
+    justify-content space-between
+
+    +below(mb)
+      justify-content center
+      align-items center
+      flex-direction column
+
+  &__items
+    flex-center()
+    flex-direction column
+
+    &:nth-child(2)
+      border-left 1px dashed text-color
+      border-right 1px dashed text-color
+      padding: 0 80px;
+
+      +below(mb)
+        border-left none
+        border-right none
+        border-top 1px dashed text-color
+        border-bottom 1px dashed text-color
+        margin: 20px 20px;
+        padding: 20px 80px;
+
+  &__devider
+    flex-center()
+    margin 25px 0
+
+    +below(mb)
+      margin 15px 0
+
+  &__text
+    flex-center()
+    color text-color
+    text-align center
+    font-family Roboto, sans-serif
+    max-width 220px
+
+  &__pdf
+    flex-center()
+    margin-top 15px
+
+    &-link
+      color orange
+      text-decoration none
+      font-family Roboto, sans-serif
+
+
+

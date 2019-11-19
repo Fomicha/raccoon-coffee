@@ -1,0 +1,74 @@
+.contacts
+  display block
+  width 100%
+  height auto
+  padding-top 60px
+
+  +below(tb)
+    padding 60px 0 0 0
+
+  &__container
+    flex-center()
+    flex-direction column
+
+  &__location-wrapper
+    display flex
+    width 100%
+
+    +below(tb)
+      flex-direction column-reverse
+
+  &__map, #mapid
+    display block
+    width 70%
+    height 400px
+
+    +below(tb)
+      width 100%
+
+  &__logo
+    flex-center()
+    margin-bottom 50px
+
+  &__info
+    display flex
+    justify-content center
+    align-items start
+    flex-direction column
+    width 30%
+    padding-left 50px
+
+    +below(tb)
+      width 100%
+      padding-left 15px
+      padding-bottom 15px
+
+  &__location-adress
+    font-family Roboto, sans-serif
+    font-size  16px
+    display inline-block
+    width 100%
+
+  &__location-adress_middle
+    margin 7px 0
+
+  &__location
+    font-size 16px
+    color black
+    text-decoration none
+
+    h3
+      font-family Roboto, sans-serif
+      font-size  18px
+      font-weight bold
+      text-transform uppercase
+
+    span
+      font-family Roboto, sans-serif
+      font-size  16px
+      font-weight normal
+      text-transform uppercase
+
+    span > a
+      text-decoration none
+      color black

@@ -1,0 +1,57 @@
+block variables
+
+doctype html
+html
+    head
+        // Global site tag (gtag.js) - Google Analytics
+        script(async='', src='https://www.googletagmanager.com/gtag/js?id=UA-142875529-1')
+        script.
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-142875529-1');
+        // Google Tag Manager
+        script.
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-N7XGVHM');
+        // End Google Tag Manager
+        title Raccoon Coffee
+        meta(name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no")
+        meta(charset='utf-8')
+        meta(name="format-detection" content="telephone=no")
+        meta(http-equiv="X-UA-Compatible" content="ie=edge")
+        meta(name="theme-color" content="#333333ff")
+
+        link(href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet")
+        link(href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css")
+        link(rel='stylesheet', href='css/style.css')
+        link(rel='stylesheet', href='css/scroll-down.css')
+        link(rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css",
+            integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==",
+            crossorigin="")
+        link(rel="icon" href="img/fav.png" type="image/x-icon")
+
+    body
+        // Google Tag Manager (noscript)
+        noscript
+            iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-N7XGVHM', height='0', width='0', style='display:none;visibility:hidden')
+        // End Google Tag Manager (noscript)
+
+        .preloader
+            .loading-indicator
+
+        include header
+        main(class=`${pageName}-page`)
+            block content
+
+    script(src="https://code.jquery.com/jquery-3.2.1.js"
+            integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+            crossorigin="anonymous")
+    script(src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js")
+    script(src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+            integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+            crossorigin="")
+    script(src='js/main.js')

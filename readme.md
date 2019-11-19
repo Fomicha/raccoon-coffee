@@ -1,3 +1,5 @@
-pug pug/screens/ --out ./ --pretty --watch
+![alt text](https://raccoon-coffee.com/img/enot.svg "Raccoon logo") 
 
-stylus -u nib -w stylus/style.styl -o css/style.css
+# Raccoon-coffee web page 
+
+[Raccon-coffe web page](https://raccoon-coffee.com "Raccoon-coffee Homepage")

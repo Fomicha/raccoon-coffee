@@ -590,6 +590,25 @@ div {
   width: 43%;
   height: 400px;
 }
+.instagram {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding-top: 60px;
+}
+.instagram__container {
+  display: block;
+}
+@media screen and (max-width: 1040px) {
+  .instagram__container {
+    margin: 0 15%;
+  }
+}
+@media screen and (max-width: 470px) {
+  .instagram__container {
+    margin: 0;
+  }
+}
 .menu {
   display: block;
   width: 100%;
